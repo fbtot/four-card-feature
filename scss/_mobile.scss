@@ -1,3 +1,4 @@
+@use "sass:color";
 @use "_variables" as *;
 
 html {
@@ -10,14 +11,16 @@ body {
   //   -moz-osx-font-smoothing: grayscale;
   //   -webkit-font-smoothing: antialiased;
   @extend %lh;
+  background: $very-light-gray;
+  color: $very-dark-blue;
 }
 
 h1 {
   font-size: 1.65rem;
   @extend %tac;
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: -0.01em;
-  margin-bottom: 1.8rem;
+  margin-bottom: 1rem;
   @extend %lh;
 
   span {
@@ -26,5 +29,62 @@ h1 {
   }
 }
 
+h2 {
+  font-size: 1.3rem;
+  font-weight: normal;
+}
+
+.card {
+  background: white;
+  border-top: 0.3rem solid $grayish-blue;
+  box-shadow: 0 1.5rem 1.2rem 0 rgba(28, 127, 173, 0.2);
+  border-radius: 0.4rem;
+  padding: 1.8rem 1.9rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__title {
+  margin-bottom: 0.3em;
+}
+
+.card__text {
+  font-size: 0.9rem;
+  margin-bottom: 2.1rem;
+  letter-spacing: -0.01em;
+  color: $grayish-blue;
+}
+
+.card__img {
+  flex: 0 0 10%;
+  margin-left: auto;
+  width: 3.8rem;
+}
+
 .subtitle {
+  @extend %tac;
+  line-height: 1.6em;
+  color: $grayish-blue;
+  margin-bottom: 5.1rem;
+}
+
+%card--mobile {
+  @extend .card;
+  margin-bottom: 1.75rem;
+}
+
+.card--cyan {
+  @extend %card--mobile;
+}
+
+.card--red {
+  @extend %card--mobile;
+}
+
+.card--orange {
+  @extend %card--mobile;
+}
+
+.card--blue {
+  @extend %card--mobile;
 }
