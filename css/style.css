@@ -118,16 +118,28 @@ h2 {
     column-gap: 1.75rem;
     grid-gap: 1.75rem;
   }
-  .cards-container article:first-child {
-    margin-bottom: 1.75rem;
+  .cards-container article[class*=card] {
+    margin-bottom: 0;
+    padding: 2rem 2.3rem 2.1rem;
   }
 
   .cards-container__center {
     grid-area: center;
   }
+  .cards-container__center article:first-child {
+    margin-bottom: 2rem;
+  }
 
-  .card--blue, .card--orange, .card--red, .card--cyan {
-    margin-bottom: 0;
+  .card__title {
+    margin-bottom: 0.8rem;
+  }
+
+  .card__text {
+    margin-bottom: 2.8rem;
+  }
+
+  .card__img {
+    width: 4.2rem;
   }
 }
 
