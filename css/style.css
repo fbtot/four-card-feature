@@ -35,6 +35,7 @@ h1 span {
 h2 {
   font-size: 1.3rem;
   font-weight: normal;
+  letter-spacing: 0.02em;
 }
 
 .card, .card--blue, .card--orange, .card--red, .card--cyan {
@@ -72,6 +73,22 @@ h2 {
 
 .card--blue, .card--orange, .card--red, .card--cyan {
   margin-bottom: 1.75rem;
+}
+
+.card--cyan {
+  border-top-color: #45d3d3;
+}
+
+.card--red {
+  border-top-color: #ea5353;
+}
+
+.card--orange {
+  border-top-color: #fcaf4a;
+}
+
+.card--blue {
+  border-top-color: #549ef2;
 }
 
 /*# sourceMappingURL=style.css.map */

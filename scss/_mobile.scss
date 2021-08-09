@@ -32,6 +32,7 @@ h1 {
 h2 {
   font-size: 1.3rem;
   font-weight: normal;
+  letter-spacing: 0.02em;
 }
 
 .card {
@@ -75,16 +76,20 @@ h2 {
 
 .card--cyan {
   @extend %card--mobile;
+  border-top-color: $cyan;
 }
 
 .card--red {
   @extend %card--mobile;
+  border-top-color: $red;
 }
 
 .card--orange {
   @extend %card--mobile;
+  border-top-color: $orange;
 }
 
 .card--blue {
   @extend %card--mobile;
+  border-top-color: $blue;
 }
