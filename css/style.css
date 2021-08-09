@@ -1,3 +1,33 @@
+h1 {
+  text-align: center;
+}
 
+body, h1 {
+  line-height: 1.5em;
+}
+
+.page {
+  width: 310px;
+  margin: 72px 32px;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 1.65rem;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  margin-bottom: 1.8rem;
+}
+h1 span {
+  font-weight: 200;
+  display: block;
+}
 
 /*# sourceMappingURL=style.css.map */

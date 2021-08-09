@@ -1,1 +1,30 @@
 @use "_variables" as *;
+
+html {
+  font-size: $base-font-size;
+}
+
+body {
+  //   background: palegoldenrod;
+  font-family: $font-family;
+  //   -moz-osx-font-smoothing: grayscale;
+  //   -webkit-font-smoothing: antialiased;
+  @extend %lh;
+}
+
+h1 {
+  font-size: 1.65rem;
+  @extend %tac;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  margin-bottom: 1.8rem;
+  @extend %lh;
+
+  span {
+    font-weight: 200;
+    display: block;
+  }
+}
+
+.subtitle {
+}
