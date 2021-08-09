@@ -4,3 +4,9 @@
   width: 310px;
   margin: 72px 32px;
 }
+
+@media screen and(min-width:$desktop-width) {
+  .page {
+    width: 1110px;
+  }
+}
